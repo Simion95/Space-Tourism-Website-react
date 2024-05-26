@@ -1,0 +1,115 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+  }
+
+.logo {
+    background-image: url(../../assets/shared/logo.svg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .hamburger-dropdown-menu {
+    background-image: url(../../assets/shared/icon-hamburger.svg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 24px;
+    height: 21px;
+    cursor: pointer;
+  }
+
+  .overlay-main-menu {
+    height: 100vh;
+    min-width: 250px;
+    right: 0px;
+    top: 0px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateX(100%);
+  z-index: 2;
+}
+
+.overlay-main-menu.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+  .close-icon {
+    background-image: url(../../assets/shared/icon-close.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    z-index: 4;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  .close-icon.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+
+  
+  @media (min-width: 600px) {
+    nav {
+        margin-bottom: 12px;
+      }
+      .logo {
+        width: 31px;
+        height: 31px;
+      }
+      .hamburger-dropdown-menu {
+        display: none;
+      }
+      .overlay-main-menu {
+        right: 421px;
+        top: 0px;
+        width: 420px;
+        height: 72px;
+        position: absolute;
+        opacity: 1;
+      }
+      .close-icon {
+        display: none;
+      }
+  }
+
+  @media (min-width: 1025px) {
+    nav {
+        padding: 32px;
+      }
+.rectangle {
+        width: 350px;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: relative;
+        height: 0.1px;
+        top: 0px;
+        left: -583px;
+        z-index: 4;
+      }  
+  .overlay-main-menu {
+    top: 18px;
+    right: 639px;
+        width: 639px;
+        height: 58px;
+        backdrop-filter: blur(14px);
+  }
+  }

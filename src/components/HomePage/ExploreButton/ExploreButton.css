@@ -1,0 +1,35 @@
+.explore-button-container {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .explore-button-container:hover .blur-circle {
+    opacity: 1;
+    cursor: pointer;
+    }
+
+    .explore-button {
+        background-color: var(--white);
+        color: var(--black);
+        border: none;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 2;
+      }
+      
+      .blur-circle {
+        position: absolute;
+        top: -35px;
+        left: -35px;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: all 0.25s ease;
+        opacity: 0;
+      }
+

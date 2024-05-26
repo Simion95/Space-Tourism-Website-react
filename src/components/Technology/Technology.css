@@ -1,0 +1,154 @@
+.technology-image {
+    position: relative;
+    width: 100%; 
+}
+
+.technology-image .landscape {
+    display: block;
+    width: 100%; 
+    height: auto;
+    max-height: 203px;
+    margin-bottom: 24px;
+}
+
+.technology-image .portrait {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.technology-details h5 {
+    color: var(--light-blue);
+    font-family: var(--font-barlow-condensed);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.technology-details h3 {
+    font-family: var(--font-bellefair);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 240x;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.technology-details p {
+    font-family: var(--font-barlow-condensed);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--light-blue);
+}
+
+.technology-selector {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.technology-selector button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px var(--white);
+    font-family: var(--font-bellefair);
+    color: var(--white);
+}
+
+.technology-selector .selected {
+    background-color: white;
+    color: var(--black);
+}
+
+.container-technology {
+    text-align: center;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.technology-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technology-info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technology-info p {
+    width: 70%;
+}
+
+.container-technology > .header-title {
+    margin-bottom: 36px;
+}
+
+    @media (min-width: 600px) {
+        .header-title {
+            margin-bottom: 16px;
+        }
+        .technology-image .landscape {
+            max-height: 230px;
+        }
+        .technology-details h3 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+        .technology-info p {
+            width: 85%;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .technology-image .landscape {
+            display: none;
+        }
+        .technology-image .portrait {
+            display: block;
+        }
+        .side-technology {
+            display: flex;
+        }
+        .technology-selector {
+            flex-direction: column;
+        }
+        .subcontainer-technology {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-left: 60px;
+            text-align: start;
+        }
+        .portrait {
+            width: 400px;
+            position: absolute;
+            top: -158px;
+            right: 0px;
+        }
+        .technology-info p {
+            width: 66%;
+        }
+        .technology-info {
+            align-items: start;
+            padding-left: 32px;
+        }
+        .technology-selector button {
+            padding: 12px 18px;
+        }
+    }

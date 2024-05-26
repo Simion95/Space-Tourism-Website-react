@@ -1,0 +1,13 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+
+  @media (min-width: 1025px) {
+    .home-page {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+  }

@@ -1,0 +1,138 @@
+.container-crew {
+    display: flex;
+    flex-direction: column;
+  }
+
+.crew-image {
+    height: 200px;
+    width: 170px;
+}
+
+.rectangle-separator-crew {
+  margin-bottom: 24px;
+  margin-top: -4px;
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 0.5px;
+}
+
+.crew-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.crew-info h5 {
+    font-family: var(--font-bellefair);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.crew-info h3 {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: var(--font-bellefair);
+    margin-bottom: 28px;
+}
+
+.crew-info p {
+    font-family: var(--font-barlow-condensed);
+    color: var(--light-blue);
+    font-weight: 300;
+    width: 75%;
+    text-align: center;
+}
+
+.crew-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .crew-selector button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .crew-selector .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+  }
+  
+  .crew-selector .selected .dot {
+    background-color: white;
+  }
+
+  .crew-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 600px) {
+    .crew-info {
+      flex-direction: column-reverse;
+    }
+    .crew-info h3 {
+      margin-bottom: 16px;
+    }
+.rectangle-separator-crew {
+  display: none;
+}
+.crew-info p {
+  margin-bottom: 28px;
+  width: 70%;
+}
+.crew-image {
+  height: 268px;
+width: 236px;
+position: absolute;
+bottom: 0px;
+right: 35%;
+  }
+
+  .crew-selector {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .crew-side {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    margin-left: -236px;
+  }
+  .crew-details {
+    align-items: start;
+    width: 600px;
+  }
+  .crew-details p {
+    text-align: start;
+    font-weight: 400;
+  }
+  .crew-info h5 {
+    font-size: 24px;
+  }
+  .crew-info h3 {
+    font-size: 36px;
+  }
+  .crew-image {
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+    height: 438px;
+        width: 351px;
+  }
+}
